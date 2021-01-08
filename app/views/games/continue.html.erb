@@ -1,4 +1,4 @@
-<h1>New Game</h1>
+<h1>Continue Game</h1>
 <ul>
   <% @letters.each do |letter| %>
     <li><%= letter.capitalize %></li>
@@ -11,3 +11,4 @@
   <input type="submit" value="Submit" class="submitbtn">
   <input type="hidden" value=<%=@letters.join("")%> name="grid">
 </form>
+<p>Your Current Score is = <%=cookies[:score]%></p>
